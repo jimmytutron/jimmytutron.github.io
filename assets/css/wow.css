@@ -1,0 +1,154 @@
+body {
+    color: #fff;
+    background: url("../imgs/background.jpeg") no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100px;
+}
+
+#splash {
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+#about, 
+#port-gallery {
+    text-decoration: overline;
+}
+
+#about:hover, 
+#port-gallery:hover {
+    text-decoration: none;
+}
+
+
+h1 {
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1em;
+    letter-spacing: 4px;
+}
+
+
+
+.monospace {
+    font-family: 'Inconsolata', monospace;
+}
+
+.my-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 15px 5px 0px;
+}
+
+.my-pic2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 15px 5px 0px;
+}
+
+#about,
+#port-gallery,
+#contact {
+    cursor: pointer;
+}
+
+#gallery {
+    /* Prevent vertical gaps */
+    line-height: 0;
+
+    -webkit-column-count: 5;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 5;
+    -moz-column-gap: 0px;
+    column-count: 5;
+    column-gap: 0px;
+}
+
+#gallery img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+    padding: 5px;
+    filter: grayscale(100%) blur(0.3px);
+    z-index: 2;
+}
+
+#gallery img:hover {
+    filter: none;
+}
+
+@media (max-width: 3000px) {
+    #gallery {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (max-width: 1500px) {
+    #gallery {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (max-width: 800px) {
+    #gallery {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 400px) {
+    #gallery {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+.footer {
+    text-align: center;
+    font-size: 2em;
+    bottom: 5%;
+}
+
+.footer a {
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer a:hover {
+    color: #83d6c9;
+}
+
+@media only screen and (max-width: 400px) {
+    #splash {
+        font-size: 1.5em;
+    }
+    #gallery img {
+        filter: none;
+    }
+}
