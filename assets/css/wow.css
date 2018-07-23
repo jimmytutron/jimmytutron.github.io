@@ -33,6 +33,8 @@ body {
 #about:hover, 
 #port-gallery:hover {
     text-decoration: none;
+    background-color: #fff;
+    color: #000;
 }
 
 
