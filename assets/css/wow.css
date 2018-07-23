@@ -30,6 +30,11 @@ body {
     text-decoration: overline;
 }
 
+a {
+    color: white;
+}
+
+a:hover,
 #about:hover, 
 #port-gallery:hover {
     text-decoration: none;
@@ -143,7 +148,7 @@ h3 {
 }
 
 .footer a:hover {
-    color: #83d6c9;
+    color: #000;
 }
 
 @media only screen and (max-width: 400px) {
