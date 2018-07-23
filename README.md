@@ -1,8 +1,8 @@
 # Portfolio :computer::sparkles:
-A current portfolio of my web development projects at UC Berkeley Extension Coding Bootcamp. Will be updated frequently as I learn and create more!
+A current portfolio of my web development projects. Will be updated frequently as I learn and create more! Working on incorporating my design portfolio as well! Coming soon!
 
 ## Linky :sparkles:
-[Launch the portfolio here!](https://jimmytutron.github.io/Portfolio/) 
+[jimmytu.com](https://jimmytu.com) 
 
 ## Built With :computer:
 
