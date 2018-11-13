@@ -48,6 +48,11 @@ h1 {
     font-size: 2em;
 }
 
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 h3 {
     font-size: 1em;
     letter-spacing: 4px;
@@ -91,18 +96,17 @@ h3 {
     column-gap: 0px;
 }
 
-#gallery img {
-    /* Just in case there are inline attributes */
+/* #gallery img {
     width: 100% !important;
     height: auto !important;
     padding: 5px;
     filter: grayscale(100%) blur(0.3px);
     z-index: 2;
-}
+} */
 
-#gallery img:hover {
+/* #gallery img:hover {
     filter: none;
-}
+} */
 
 @media (max-width: 3000px) {
     #gallery {
@@ -159,3 +163,38 @@ h3 {
         filter: none;
     }
 }
+
+.image-wrap{
+    position: relative;
+    width: 100% !important;
+    height: auto !important;
+    padding: 5px;
+    filter: grayscale(100%) blur(0.3px);
+    z-index: 2;
+}
+
+.image-description {
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    visibility: hidden;
+    line-height: 1em;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+
+  .image-wrap:hover .image-description {
+    visibility: visible;
+    opacity: 0.9;
+  }
+
+  .image-wrap:hover {
+      filter: none;
+  }
