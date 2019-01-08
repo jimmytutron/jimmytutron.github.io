@@ -99,12 +99,10 @@ h3 {
 }
 
 .image-wrap{
-    position: relative;
-    width: 100% !important;
-    height: auto !important;
-    padding: 5px;
     filter: grayscale(100%) blur(0.3px);
     z-index: 2;
+    padding: 5px;
+    margin: 0px;
 }
 
 .image-description {
@@ -164,6 +162,7 @@ h3 {
         column-count: 1;
     }
 }
+
 
 .footer {
     text-align: center;
