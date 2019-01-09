@@ -1,0 +1,97 @@
+<div id="gallery" class="col-12 col-md-10 animated fadeInUp">
+ 
+</div>
+
+<script>
+var portfolio = [{
+          name: "Art of Translation",
+          thumb: "assets/imgs/art-of-translation-1.png",
+          image: "assets/imgs/art-of-translation.png",
+          image_alt: "art of translation",
+          description: "An editorial spread based on an interview with translator, Sue Chang, and how she tackles the objectives of translation. Inspiration for the piece is taken from traditional Chinese water color and brush strokes. <br>The full piece can be viewed and read <a href='assets/TheArtofTranslationSpread.pdf'>here</a>"
+        },
+        {
+          name: "Spirit Wolf",
+          thumb: "assets/imgs/wolf.png",
+          image: "assets/imgs/wolf.png",
+          image_alt: "Spirit Wolf",
+          description: "In current times of turbulence and uncertainty in our great nation, I wanted to create something that touched upon the positive aspects of American culture: our amazing wildlife.<br>What's more American than a bald eagle, grizzly bear, and gray wolf? Nothing.<br>Photography: Various @ Unsplash"
+        },
+        {
+          name: "Spirit Bear",
+          thumb: "assets/imgs/bear.png",
+          image: "assets/imgs/bear.png",
+          image_alt: "Spirit Bear",
+          description: "In current times of turbulence and uncertainty in our great nation, I wanted to create something that touched upon the positive aspects of American culture: our amazing wildlife.<br>What's more American than a bald eagle, grizzly bear, and gray wolf? Nothing.<br>Photography: Various @ Unsplash"
+        },
+        {
+          name: "Spirit Eagle",
+          thumb: "assets/imgs/eagle.png",
+          image: "assets/imgs/eagle.png",
+          image_alt: "Spirit Eagle",
+          description: "In current times of turbulence and uncertainty in our great nation, I wanted to create something that touched upon the positive aspects of American culture: our amazing wildlife.<br>What's more American than a bald eagle, grizzly bear, and gray wolf? Nothing.<br>Photography: Various @ Unsplash"
+        },
+        {
+          name: "My Everything",
+          thumb: "assets/imgs/my-everything.png",
+          image: "assets/imgs/my-everything.png",
+          image_alt: "My Everything",
+          description: "<p class='font-italics'> He wasn't my everything, till we were nothing...</p><p>Book cover design that is based on the title of an album. My Everything by A.G. Butera (Ariana Grande) is a suspenseful romance about love in the afterlife.</p>"
+        },
+        {
+          name: "Corkscrew Coffee",
+          thumb: "assets/imgs/coffee-1.png",
+          image: "assets/imgs/coffee.png",
+          image_alt: "Corkscrew Coffee",
+          description: "Fictional coffee branding and mockup with product line based on the energy and momentum of rollercoasters.<br>The names of the products are based on real life rollercoasters: Kingda Ka at Six Flags Great Adventure, and Steel Dragon 2000 at Nagashima Spa Land."
+        },
+        {
+          name: "YosoObo!",
+          thumb: "assets/imgs/YosoOboPoster.png",
+          image: "assets/imgs/yosoobo.png",
+          image_alt: "YosoObo!",
+          description: "YosoObo (literally elemental balls in Japanese), is concept work for a fictional character RPG game in the same vein as series such as Pokemon. <br> Made in mind for the 3DS the limited edition box set includes: A themed New Nintendo 3DS XL with custom theme, A t-shirt, 2 versions of the game itself, Amiibo cards, and a poster."
+        },
+        {
+          name: "Cattack on Titan",
+          thumb: "assets/imgs/cattack.png",
+          image: "assets/imgs/cattack.png",
+          image_alt: "Cattack",
+          description: "Cats meet Godzilla meets Attack on Titan.",
+        },
+        {
+          name: "Tell Me Your Wish",
+          thumb: "assets/imgs/genie.png",
+          image: "assets/imgs/genie.png",
+          image_alt: "Girls' Generation",
+          description: "소원을 말해봐, I'm a Genie for your world. Girls' Generation, featuring heavenly clouds and ethereal swirls.",
+        },
+        {
+          name: "Warrior",
+          thumb: "assets/imgs/warrior.jpg",
+          image: "assets/imgs/warrior-main.png",
+          image_alt: "Warrior",
+          description: "Tasked with fixing what some would consider an ugly album cover, I chose to redesign Ke$ha's Warrior album. Space themes with polyscapes! Out of this world",
+        }
+        ];
+    
+var gallery = $("#gallery");
+
+
+
+portfolio.forEach(function(project){
+    gallery.append(`
+    <figure class="image-wrap">
+      <a href="${project.image}" data-fancybox="images" data-caption="
+          <h2>${project.name}</h2>
+          <p>${project.description}</p>
+          <p><a href='${project.repo_url}' target='_blank'><i class='fab fa-github'></i> Github</a> &nbsp; 
+          <a href='${project.deployed_url}' target='_blank'><i class='fas fa-external-link-alt'></i> Live</a></p>">
+        <img class="img-fluid" src="${project.thumb}">
+      </a>
+    </figure>
+`)
+})
+
+
+</script>
