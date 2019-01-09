@@ -8,7 +8,7 @@ var portfolio = [{
           thumb: "assets/imgs/art-of-translation-1.png",
           image: "assets/imgs/art-of-translation.png",
           image_alt: "art of translation",
-          description: "An editorial spread based on an interview with translator, Sue Chang, and how she tackles the objectives of translation. Inspiration for the piece is taken from traditional Chinese water color and brush strokes. <br>The full piece can be viewed and read <a href='assets/TheArtofTranslationSpread.pdf' target='_blank'>here</a>"
+          description: "An editorial spread based on an interview with translator, Sue Chang, and how she tackles the objectives of translation. Inspiration for the piece is taken from traditional Chinese water color and brush strokes. <br>The full piece can be viewed and read <a href='assets/TheArtofTranslationSpread.pdf' target='blank'>here</a>"
         },
         {
           name: "Spirit Wolf",
@@ -82,7 +82,7 @@ var gallery = $("#gallery");
 portfolio.forEach(function(project){
     gallery.append(`
     <figure class="image-wrap">
-      <a href="${project.image}" data-fancybox="images" data-caption="<h2>${project.name}</h2><p>${project.description}</p>>
+      <a href="${project.image}" data-fancybox="images" data-caption="<h2>${project.name}</h2><p>${project.description}</p>">
         <img class="img-fluid" src="${project.thumb}">
       </a>
     </figure>
