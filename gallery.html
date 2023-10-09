@@ -8,7 +8,7 @@ var portfolio = [{
           image: "assets/imgs/media.png",
           image_alt: "ME.dia logo",
           repo_url: "https://github.com/jimmytutron/ME-dia",
-          deployed_url: "http://media-2018.herokuapp.com",
+          // deployed_url: "http://media-2018.herokuapp.com",
           description: "A full stack application that generates cross platform media and entertainment recommendations. Built using Handlebars and MySQL",
           tags: ["Express", "Node", "Handlebars", "MySQL"]
         },
@@ -17,7 +17,7 @@ var portfolio = [{
           image: "assets/imgs/thanos.png",
           image_alt: "Thanos Simulator",
           repo_url: "https://github.com/jimmytutron/Thanos-Simulator",
-          deployed_url: "https://mysterious-harbor-91238.herokuapp.com/",
+          // deployed_url: "https://mysterious-harbor-91238.herokuapp.com/",
           description: "Perfectly balanced... This app integrates a MySQL database to query and route data and uses Handlebars to template HTML",
           tags: ["Express", "Node", "Handlebars", "MySQL"]
         },
@@ -26,7 +26,7 @@ var portfolio = [{
           image: "assets/imgs/sombra.png",
           image_alt: "sombra logo",
           repo_url: "https://github.com/jimmytutron/s0mbr-",
-          deployed_url: "https://github.com/jimmytutron/delosinc",
+          // deployed_url: "https://github.com/jimmytutron/delosinc",
           description: "A command line application built in Node.js. You act as Sombra, an infamous hacker, who can take in various paramaters to 'hack' the terminal",
           tags: ["Node"]
         },
@@ -44,7 +44,7 @@ var portfolio = [{
           image: "assets/imgs/hogwarts.png",
           image_alt: "hogwarts logo",
           repo_url: "https://github.com/jimmytutron/sorting-hat",
-          deployed_url: "https://still-scrubland-73712.herokuapp.com/",
+          // deployed_url: "https://still-scrubland-73712.herokuapp.com/",
           description: "An interactive survey that prompts users with a series of questions and compares their results and sorts them into their proper Hogwarts house built with Node & Express",
           tags: ["Node", "Express"]
         },
@@ -53,7 +53,7 @@ var portfolio = [{
           image: "assets/imgs/careerdeer.png",
           image_alt: "hogwarts logo",
           repo_url: "https://github.com/jimmytutron/career-deer",
-          deployed_url: "https://careerdeer.herokuapp.com/",
+          // deployed_url: "https://careerdeer.herokuapp.com/",
           description: "Ever feel like a deer in the headlights when it comes to your job search? This is a jobs applications progress tracker to help you stay on top of your job search. Built with MongoDB, Express, React, Node and Material UI",
           tags: ["MongoDB", "Express", "React", "Node", "Material UI"]
         },
@@ -112,29 +112,11 @@ var portfolio = [{
           tags: ["Node", "MySQL"]
         },
         {
-          name: "Psychic Game",
-          image: "assets/imgs/psychic.png",
-          image_alt: "pink desert",
-          repo_url: "https://github.com/jimmytutron/Psychic_Game",
-          deployed_url: "https://jimmytu.com/Psychic_Game/",
-          description: "Test your psychic abilities! In this basic browser game you are challenged to guess what letter the computer is guessing! But be warned, you only have 10 chances to win!",
-          tags: ["Vanilla Javascript"]
-        },
-        {
-          name: "BLACKPINK Bootstrap",
-          image: "assets/imgs/blackpink.png",
-          image_alt: "BLACKPINK members",
-          repo_url: "https://github.com/jimmytutron/BLACKPINK-Bootstrap",
-          deployed_url: "http://jimmytu.com/BLACKPINK-Bootstrap/",
-          description: "A simple bootstrap fanpage dedicated to kpop group BLACKPINK",
-          tags: ["Bootstrap"]
-        },
-        {
           name: "New York Times Scraper",
           image: "assets/imgs/nyt.png",
           image_alt: "New York",
           repo_url: "https://github.com/jimmytutron/nyt-scraper-mern",
-          deployed_url: "https://scraper-nyt-react.herokuapp.com/",
+          // deployed_url: "https://scraper-nyt-react.herokuapp.com/",
           description: "A MERN application that scrapes articles from the New York Times",
           tags: ["MongoDB", "Express", "React", "Node"]
         }];
@@ -149,7 +131,11 @@ portfolio.forEach(function(project){
       <a href="${project.image}" data-fancybox="images" data-caption="
           <h2>${project.name}</h2>
           <p>${project.description}</p>
-          <p><a href='${project.repo_url}' target='_blank'><i class='fab fa-github'></i> Github</a> &nbsp;</p>">
+          <p><a href='${project.repo_url}' target='_blank'><i class='fab fa-github'></i> Github</a>
+            ${project.deployed_url 
+              ? `&nbsp; <a href='${project.deployed_url}' target='_blank'><i class='fas fa-external-link-alt'></i> Live</a>`  
+              : ""}
+          </p>">
         <img class="img-fluid" src="${project.image}">
       </a>
     </figure>
